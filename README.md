@@ -5,3 +5,7 @@
 ## Deno KV
 
 - https://deno.com/manual@v1.33.1/runtime/kv
+
+## Acknowledge
+
+- https://github.com/journey-ad/Moe-Counter
