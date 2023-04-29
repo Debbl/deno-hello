@@ -3,8 +3,5 @@
     "dev": "deno run --allow-net --unstable main.ts",
     "compile": "deno compile --unstable main.ts",
     "check": "deno check --unstable main.ts"
-  },
-  "imports": {
-    "oak/": "https://deno.land/x/oak@v12.3.0/"
   }
 }
