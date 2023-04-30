@@ -17,21 +17,13 @@ function getCountImage(
 
   const parts = countArray.reduce((acc, next) => {
     const { width = 45, height = 100, data } = theme[next];
-    const image = `${acc}
-        <image x="${x}" y="0" width="${width}" height="${height}" xlink:href="${data}" />`;
+    const image = `${acc}<image x="${x}" y="0" width="${width}" height="${height}" xlink:href="${data}" />`;
     x += width;
     if (height > y) y = height;
     return image;
   }, "");
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg width="${x}" height="${y}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Moe Count</title>
-    <g>
-      ${parts}
-    </g>
-</svg>
-`;
+  return `<?xml version="1.0" encoding="UTF-8"?><svg width="${x}" height="${y}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Moe Count</title><g>${parts}</g></svg>`;
 }
 
 const router = new Router();
