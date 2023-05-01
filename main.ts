@@ -1,4 +1,4 @@
-import { Application, Router } from "./deps.ts";
+import { Application, Router } from "oak/mod.ts";
 import { THEME } from "./theme.ts";
 
 const app = new Application();
