@@ -3,5 +3,6 @@
     "dev": "deno run --allow-net --unstable main.ts",
     "compile": "deno compile --unstable main.ts",
     "check": "deno check --unstable main.ts"
-  }
+  },
+  "import_map": "./import_map.json"
 }
